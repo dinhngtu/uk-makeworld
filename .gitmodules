@@ -1,0 +1,18 @@
+[submodule "unikraft/unikraft"]
+	path = unikraft/unikraft
+	url = https://github.com/unikraft/unikraft.git
+[submodule "unikraft/libs/compiler-rt"]
+	path = unikraft/libs/compiler-rt
+	url = https://github.com/unikraft/lib-compiler-rt
+[submodule "unikraft/libs/libcxx"]
+	path = unikraft/libs/libcxx
+	url = https://github.com/unikraft/lib-libcxx.git
+[submodule "unikraft/libs/libcxxabi"]
+	path = unikraft/libs/libcxxabi
+	url = https://github.com/unikraft/lib-libcxxabi
+[submodule "unikraft/libs/libunwind"]
+	path = unikraft/libs/libunwind
+	url = https://github.com/unikraft/lib-libunwind
+[submodule "unikraft/libs/musl"]
+	path = unikraft/libs/musl
+	url = https://github.com/unikraft/lib-musl

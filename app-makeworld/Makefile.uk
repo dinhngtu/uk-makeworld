@@ -1,0 +1,8 @@
+$(eval $(call addlib,appmakeworld))
+
+APPMAKEWORLD_CINCLUDES += -I$(APPMAKEWORLD_BASE) -I$(APPMAKEWORLD_BASE)/include
+APPMAKEWORLD_CXXINCLUDES += -I$(APPMAKEWORLD_BASE) -I$(APPMAKEWORLD_BASE)/include
+APPMAKEWORLD_CFLAGS-y += -Wall -Wextra -Wformat=2 -Wimplicit-fallthrough=5 -fwrapv -std=c11
+APPMAKEWORLD_CXXFLAGS-y += -Wall -Wextra -Wformat=2 -Wimplicit-fallthrough=5 -fwrapv -std=c++17
+
+APPMAKEWORLD_SRCS-y += $(APPMAKEWORLD_BASE)/main.c
