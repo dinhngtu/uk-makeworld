@@ -1,5 +1,5 @@
 # uk-makeworld
-No idea how to set up Unikraft? Try this. Tested with Ubuntu 20.04, GCC 11, QEMU 6.0.0.
+No idea how to set up Unikraft? Try this. Tested with Ubuntu 20.04, GCC 9, QEMU 6.0.0.
 
 ```
 > git clone --recursive https://github.com/dinhngtu/uk-makeworld.git
