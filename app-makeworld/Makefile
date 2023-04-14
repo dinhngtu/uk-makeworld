@@ -23,7 +23,7 @@ build:
 	@make -C $(UNIKRAFT_ROOT)/unikraft A=$(PWD) L=$(BUILD_LIBS) -j$(JOBS)
 
 run:
-	sudo qemu-system-x86_64 -nographic -device isa-debug-exit -m 1024M -machine microvm,accel=kvm,pit=off,pic=off,rtc=on -cpu host,migratable=no,+invtsc -kernel $(kernel) -append "$(APPEND)"
+	sudo qemu-system-x86_64 -nographic -device isa-debug-exit -smp 4 -m 1024M -machine pc,accel=kvm -cpu host,migratable=no,+invtsc -kernel $(kernel) -append "$(append)"
 
 clean:
 	@make -C $(UNIKRAFT_ROOT)/unikraft A=$(PWD) L=$(BUILD_LIBS) clean
